@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basti Candava | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Intro Page -->
+  <div id="intro-page">
+    <div class="intro-content">
+      <img src="c:\Users\basti\OneDrive\Pictures\9089376a-9cf0-4fb2-8b8f-7c76c94a9c18.jpg" alt="My Face" class="intro-image" />
+      <h1>Welcome to my portfolio</h1>
+      <p>Get ready to know me.</p>
+      <button id="enter-btn">Let's Go</button>
+    </div>
+  </div>
+
+  <!-- Header & Navbar -->
+  <header>
+      <nav class="navbar">
+        <h1 class="logo"><img src="c:\Users\basti\OneDrive\Pictures\9089376a-9cf0-4fb2-8b8f-7c76c94a9c18.jpg" alt="icon" class="nav-icon" />My portfolio</h1>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#challenges">Challenges</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- About Me Section -->
+<section id="about">
+  <div class="about-box">
+    <h2>About Me</h2>
+    <div class="about-tabs">
+      <div class="tab-content active" id="about-slide">
+        <h2>Hi, I'm Basti Candava</h2>
+        <p>I’m a passionate Computer Science student at CvSU Bacoor Campus. I enjoy learning new technologies and growing my skills to become a full-stack developer.</p>
+      </div>
+    </div>
+    <button class="next-btn" id="nextBtn">&#10140;</button> <!-- right arrow -->
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="skills-card">
+      <h2 class="section-heading">SKILLS, TRAININGS & CERTIFICATES</h2>
+      <div class="skills-panel" id="skills-slide">
+        <h2><span class="icon">💡</span> Acquired Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Basic Python Programming</li>
+          <li>Responsive Web Design</li>
+          <li>Version Control with Git</li>
+          <li>Basic Problem Solving</li>
+        </ul>
+      </div>
+      <button class="next-card-btn" id="skillsNextBtn">What's Next?</button>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <!-- Intro Panel -->
+    <div class="project-card" id="project-slide">
+      <h1>Welcome to my Project Section</h1>
+      <p>In here are some of the projects that I've worked on or been part of.</p>
+      <button class="next-project-btn" id="viewProjectsBtn">View Projects</button>
+    </div>
+  </section>
+
+
+  <!-- Challenges Section -->
+  <section id="challenges">
+    <h1 class="section-heading">Challenges and Learnings</h1>
+
+    <div class="challenge-learn-container">
+      <div class="challenge-box">
+        <h2>Challenges</h2>
+        <ul>
+          <li>Understanding JavaScript DOM manipulation</li>
+          <li>Designing for mobile responsiveness</li>
+          <li>Structuring projects with clean code</li>
+          <li>Staying motivated during debugging</li>
+        </ul>
+      </div>
+
+      <div class="learning-box">
+        <h2>Learnings</h2>
+        <ul>
+          <li>Improved DOM handling and animations</li>
+          <li>Gained knowledge of media queries and layout techniques</li>
+          <li>Learned code modularity and reusability</li>
+          <li>Learned patience and problem-solving mindset</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Future Plans Section -->
+  <section id="plans" class="future-section">
+    <h1 class="section-heading">Future Plans in Life</h1>
+    <div class="future-box">
+      <p id="typed-text"></p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section">
+    <div class="resume-intro">
+      <h1>Resume</h1>
+      <p>How would you like to view my resume?</p>
+      <div class="resume-options" id="resume-options">
+        <button id="view-full">View Whole Resume</button>
+        <button id="view-part">View Step-by-Step</button>
+      </div>
+    </div>
+
+    <!-- Full Resume View -->
+    <div id="resume-full" class="resume-full hidden">
+      <img src="your-resume-image.jpg" alt="Full Resume">
+      <a href="your-resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+      <button class="back-btn">Back</button>
+    </div>
+
+    <!-- Step-by-Step Resume Panels -->
+    <div id="resume-panels" class="resume-panels hidden">
+      <!-- Panel 1 -->
+      <div class="resume-panel" id="panel-1">
+        <h2>Header & Career Objective</h2>
+        <p><strong>Name:</strong> Basti Candava</p>
+        <p><strong>Course:</strong> BS in Computer Science</p>
+        <p><strong>Email:</strong> your@email.com</p>
+        <p><strong>GitHub:</strong> github.com/yourusername</p>
+        <p><strong>Objective:</strong> Aspiring full-stack developer currently studying Computer Science. Passionate about building responsive, user-focused applications.</p>
+        <div class="panel-controls">
+          <button class="next-btn" data-target="panel-2">Next</button>
+        </div>
+        <button class="back-btn">Back</button>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="resume-panel hidden" id="panel-2">
+        <h2>Education & Skills</h2>
+        <p><strong>School:</strong> Cavite State University – Bacoor Campus</p>
+        <p><strong>Course:</strong> BS in Computer Science</p>
+        <p><strong>Expected Graduation:</strong> 2026</p>
+        <p><strong>Skills:</strong></p>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, SQLite, Git</li>
+          <li>Responsive Design</li>
+          <li>Teamwork, Time Management</li>
+        </ul>
+        <div class="panel-controls">
+          <button class="prev-btn" data-target="panel-1">Back</button>
+          <button class="next-btn" data-target="panel-3">Next</button>
+        </div>
+      </div>
+
+      <!-- Panel 3 -->
+      <div class="resume-panel hidden" id="panel-3">
+        <h2>Work Experience & Reference</h2>
+        <p><strong>Job:</strong> Construction Laborer</p>
+        <p><strong>Description:</strong> Assisted in manual tasks at a construction site. Gained teamwork and discipline.</p>
+        <p><strong>Reference:</strong> My Father (Foreman)</p>
+        <div class="panel-controls">
+          <button class="prev-btn" data-target="panel-2">Back</button>
+          <a href="your-resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h1>Contact</h1>
+    <div id="contactInfoPanel" class="panel">
+      <h2>Let's Connect</h2>
+
+      <div class="contact-items">
+        <div class="contact-item">
+          <a href="mailto:basticandava2004@gmail.com">📧 basticandava2004@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.facebook.com/profile.php?id=61576274020008" target="_blank">📘 Facebook: Istab Candavs</a>
+        </div>
+        <div class="contact-item">
+          <a href="tel:+639295272216">📱 +63 9295272216</a>
+        </div>
+      </div>
+
+      <button id="showFormBtn">Contact Me</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Basti Candava | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
